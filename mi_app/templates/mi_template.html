@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mi PDF Generado</title>
+    <!-- Agrega estilos CSS si es necesario -->
+    <style>
+        /* Estilos personalizados aquí */
+    </style>
+</head>
+<body>
+    <h1>PDF Generado a partir de Datos de Mi Modelo</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <!-- Agrega más columnas según tu modelo -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for dato in datos %}
+                <tr>
+                    <td>{{ dato.id }}</td>
+                    <td>{{ dato.nombre }}</td>
+                    <td>{{ dato.descripcion }}</td>
+                    <!-- Agrega más columnas según tu modelo -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
